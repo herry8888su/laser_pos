@@ -1,0 +1,18 @@
+--cpu=Cortex-M4.fp
+".\objects\at32f435_437_clock.o"
+".\objects\at32f435_437_int.o"
+".\objects\main.o"
+".\objects\at32f435_437_board.o"
+".\objects\at32f435_437_crm.o"
+".\objects\at32f435_437_usart.o"
+".\objects\at32f435_437_gpio.o"
+".\objects\at32f435_437_misc.o"
+".\objects\at32f435_437_tmr.o"
+".\objects\at32f435_437_dac.o"
+".\objects\at32f435_437_dma.o"
+".\objects\system_at32f435_437.o"
+".\objects\startup_at32f435_437.o"
+--strict --scatter ".\objects\one_dac_noisewave.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\listings\one_dac_noisewave.map" -o .\objects\one_dac_noisewave.axf

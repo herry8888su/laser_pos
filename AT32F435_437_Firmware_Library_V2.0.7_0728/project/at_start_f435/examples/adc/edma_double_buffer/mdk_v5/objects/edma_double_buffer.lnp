@@ -1,0 +1,17 @@
+--cpu=Cortex-M4.fp
+".\objects\at32f435_437_clock.o"
+".\objects\at32f435_437_int.o"
+".\objects\main.o"
+".\objects\at32f435_437_board.o"
+".\objects\at32f435_437_gpio.o"
+".\objects\at32f435_437_misc.o"
+".\objects\at32f435_437_crm.o"
+".\objects\at32f435_437_adc.o"
+".\objects\at32f435_437_usart.o"
+".\objects\at32f435_437_edma.o"
+".\objects\system_at32f435_437.o"
+".\objects\startup_at32f435_437.o"
+--strict --scatter ".\objects\edma_double_buffer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\listings\edma_double_buffer.map" -o .\objects\edma_double_buffer.axf

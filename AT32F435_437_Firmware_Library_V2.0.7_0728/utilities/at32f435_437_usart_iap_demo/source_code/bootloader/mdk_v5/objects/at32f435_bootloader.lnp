@@ -1,0 +1,21 @@
+--cpu=Cortex-M4.fp
+".\objects\at32f435_437_clock.o"
+".\objects\at32f435_437_int.o"
+".\objects\flash.o"
+".\objects\iap.o"
+".\objects\tmr.o"
+".\objects\usart.o"
+".\objects\main.o"
+".\objects\at32f435_437_board.o"
+".\objects\at32f435_437_crm.o"
+".\objects\at32f435_437_flash.o"
+".\objects\at32f435_437_gpio.o"
+".\objects\at32f435_437_usart.o"
+".\objects\at32f435_437_tmr.o"
+".\objects\at32f435_437_misc.o"
+".\objects\system_at32f435_437.o"
+".\objects\startup_at32f435_437.o"
+--library_type=microlib --strict --scatter ".\objects\at32f435_bootloader.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\listings\at32f435_bootloader.map" -o .\objects\at32f435_bootloader.axf
